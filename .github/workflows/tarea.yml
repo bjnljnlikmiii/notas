@@ -1,0 +1,64 @@
+name: Tarea programada
+
+on:
+  schedule:
+    # Cada 20 minutos (a los minutos 07, 27 y 47 de cada hora).
+    # GitHub puede retrasar unos minutos las ejecuciones programadas cuando tiene mucha carga.
+    - cron: "7,27,47 * * * *"
+  workflow_dispatch: # botón "Run workflow" para probarlo a mano
+  push: # y una ejecución en cuanto se sube un cambio al código
+    branches: [main]
+    paths:
+      - "tarea.py"
+      - ".github/workflows/tarea.yml"
+
+permissions:
+  contents: write # para guardar estado.json en el repositorio
+
+concurrency:
+  group: tarea
+  cancel-in-progress: false
+
+jobs:
+  revisar:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v5
+        with:
+          ref: main # siempre lo último (si dos ejecuciones coinciden, la segunda parte de los datos nuevos)
+
+      - name: Ejecutar
+        env:
+          TELEGRAM_TOKEN: ${{ secrets.TELEGRAM_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+          # ---- Personaliza tus avisos aquí ----
+          DESCUENTO_MINIMO: "45"  # solo rebajas y bajadas de precio del 45% o más ("0" = todas)
+          ULTIMAS_SIEMPRE: "1"    # "1" = avisar de TODAS las últimas unidades, aunque tengan menos del 50%
+          PRECIO_MAXIMO: "0"      # ej. "5000" = solo hasta 5,000 pesos en la tienda A (0 = sin límite)
+          INCLUIR_ESPANA: "1"     # "1" = revisar también la tienda B, "0" = solo la A
+          PRECIO_MAXIMO_EUR: "0"  # lo mismo para la tienda B, en euros (0 = sin límite)
+          PALABRAS_CLAVE: ""      # ej. "sofá,lámpara,escritorio" (vacío = todo)
+          INCLUIR_FAMILY: "1"     # "0" para no incluir precios de socios
+          INCLUIR_ULTIMAS: "1"    # "0" para no recibir avisos de últimas unidades
+          INCLUIR_DESTACADOS: "1" # "1" = vigilar la lista de productos destacados de la tienda A
+          DESTACADOS_SIEMPRE: "1" # "1" = avisar de lo que entra en esa lista aunque tenga menos descuento
+          CAMA_Y_COLCHON: "1"     # "1" = vigilar aparte camas y colchones
+          CAMA_TAMANOS: "full,queen"  # twin, full, queen, king (en España: full = 135-149 cm, queen = 150-170 cm)
+          CAMA_DESCUENTO_MINIMO: "1"  # "1" = cualquier rebaja de cama o colchón
+          MAX_FOTOS: "5"          # los N de más descuento llegan con foto; el resto, en una lista sin fotos
+        run: python3 tarea.py
+
+      - name: Guardar estado
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          [ -f estado.json ] || exit 0
+          git add estado.json
+          if git diff --cached --quiet; then
+            echo "Sin cambios que guardar"
+            exit 0
+          fi
+          git commit -m "Actualizar estado"
+          git pull --rebase
+          git push
