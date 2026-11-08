@@ -1012,6 +1012,16 @@ def main():
             secciones_activadas.add("destacados_lista")  # la activación ya incluye el resumen
         secciones_activadas.add("destacados")
 
+    # Mensaje de comprobación, una sola vez (para confirmar que llegan los avisos desde aquí).
+    if "comprobacion_envio" not in secciones_activadas and TELEGRAM_TOKEN and TELEGRAM_CHATS:
+        n_a = sum(1 for o in actuales.values() if o["pais"] == "do")
+        n_b = sum(1 for o in actuales.values() if o["pais"] == "es")
+        for chat in TELEGRAM_CHATS:
+            enviar_texto(chat, f"✅ <b>Comprobación</b> ({fecha})\nTodo funciona: acabo de revisar "
+                               f"{n_a} ofertas de {TIENDA['do']} y {n_b} de {TIENDA['es']}. "
+                               "Seguirás recibiendo aquí las rebajas nuevas, como hasta ahora.")
+        secciones_activadas.add("comprobacion_envio")
+
     # Bienvenida a cada chat o canal nuevo, para que no se quede vacío hasta la próxima rebaja.
     # (Si es la primera vez, ya recibió arriba el mensaje de activación.)
     nuevos_chats = [c for c in TELEGRAM_CHATS if huella(c) not in saludados] if paises_conocidos else []
