@@ -8,6 +8,7 @@
  "resumen_desde": 45.0,
  "secciones_activadas": [
   "cama_resumen",
+  "comprobacion_envio",
   "destacados",
   "destacados_lista",
   "resumen_inicial"
@@ -6199,6 +6200,10 @@
    "precio": 75685.0,
    "visto": "2026-11-08"
   },
+  "oferta:19619761": {
+   "precio": 39795.0,
+   "visto": "2026-11-08"
+  },
   "oferta:19619803": {
    "precio": 35795.0,
    "visto": "2026-11-08"
@@ -7090,6 +7095,10 @@
    "precio": 19190.0,
    "visto": "2026-11-08"
   },
+  "oferta:29619746": {
+   "precio": 39795.0,
+   "visto": "2026-11-08"
+  },
   "oferta:29619794": {
    "precio": 36995.0,
    "visto": "2026-11-08"
@@ -7926,6 +7935,10 @@
   },
   "oferta:39619171": {
    "precio": 63890.0,
+   "visto": "2026-11-08"
+  },
+  "oferta:39619779": {
+   "precio": 39795.0,
    "visto": "2026-11-08"
   },
   "oferta:39619821": {
@@ -13147,6 +13160,10 @@
   },
   "oferta:99619192": {
    "precio": 79185.0,
+   "visto": "2026-11-08"
+  },
+  "oferta:99619743": {
+   "precio": 39795.0,
    "visto": "2026-11-08"
   },
   "oferta:99619818": {
