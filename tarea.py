@@ -118,6 +118,8 @@ _SEC_B = json.loads(_t("eyJiYWphZGFzIjogIm5ld19sb3dlcl9wcmljZSIsICJ0aWVtcG8iOiAi
 SECCIONES_ES = [(_SEC_B["bajadas"], "SPECIAL"),    # bajadas de precio
                 (_SEC_B["tiempo"], "SPECIAL"),     # ofertas por tiempo limitado
                 (_SEC_B["tienda"], "CATEGORY")]    # ofertas solo en tienda física
+# Más secciones con rebajas (incluyen productos que no salen en las anteriores).
+SECCIONES_ES += [(x, "SPECIAL") for x in json.loads(_t("WyJyZWR1Y2VkX3ByaWNlIiwgImluX3N0b3JlX3ByaWNlX29ubHkiXQ=="))]
 if INCLUIR_FAMILY:
     SECCIONES_ES.append((_SEC_B["family"], "SPECIAL"))
 if INCLUIR_ULTIMAS:
@@ -412,6 +414,10 @@ def ofertas_es(p):
     precio = p.get("salesPrice") or {}
     actual = num(precio.get("numeral"))
     anterior = precio_api(precio.get("previous"))
+    texto_anuncio = (precio.get("advertisement") or {}).get("text") or ""
+    if not anterior and "anterior" in texto_anuncio.lower():
+        # Algunos productos traen el precio anterior solo en el texto: "Precio anterior 19,99€"
+        anterior = numero_euros(texto_anuncio)
     etiquetas = set(precio.get("tags") or []) | {p.get("tag")}
     ultimas = INCLUIR_ULTIMAS and bool(p.get("lastChance"))
     base = {
@@ -440,7 +446,8 @@ def ofertas_es(p):
             resultado.append({**base, "tipo": tipo, "ahora": actual, "antes": anterior})
 
     anuncio = precio.get("advertisement") or {}
-    if "LOWER_CURRENT_REGULAR_PRICE_IN_STORE" in etiquetas and actual > 0:
+    if ("LOWER_CURRENT_REGULAR_PRICE_IN_STORE" in etiquetas and actual > 0
+            and "anterior" not in (anuncio.get("text") or "").lower()):
         en_tienda = numero_euros(anuncio.get("text"))
         if not en_tienda and precio.get("lowerInStorePricePercentage"):
             en_tienda = round(actual * (1 - num(precio["lowerInStorePricePercentage"]) / 100), 2)
