@@ -359,7 +359,8 @@ def ofertas_de(item, hoy, destacado=False):
 
     if INCLUIR_FAMILY and family > 0 and actual > family:
         ini, fin = item.get("family_price_fi") or "", item.get("family_price_ff") or ""
-        if ini <= hoy <= fin:
+        # Algunos precios Family vienen sin fechas: se dan por vigentes (salen en la web).
+        if (not ini or ini <= hoy) and (not fin or hoy <= fin):
             precio_normal = oferta if 0 < oferta < actual else actual
             if family < precio_normal:
                 resultado.append({**base, "tipo": "family", "ahora": family,
@@ -446,8 +447,9 @@ def ofertas_es(p):
             resultado.append({**base, "tipo": tipo, "ahora": actual, "antes": anterior})
 
     anuncio = precio.get("advertisement") or {}
-    if ("LOWER_CURRENT_REGULAR_PRICE_IN_STORE" in etiquetas and actual > 0
-            and "anterior" not in (anuncio.get("text") or "").lower()):
+    texto_tienda = (anuncio.get("text") or "").lower()
+    if (("LOWER_CURRENT_REGULAR_PRICE_IN_STORE" in etiquetas or "solo en tienda" in texto_tienda)
+            and actual > 0 and "anterior" not in texto_tienda):
         en_tienda = numero_euros(anuncio.get("text"))
         if not en_tienda and precio.get("lowerInStorePricePercentage"):
             en_tienda = round(actual * (1 - num(precio["lowerInStorePricePercentage"]) / 100), 2)
@@ -481,7 +483,8 @@ def cama_o_colchon(o):
         return "colchon"
     excluir = ("sofa", "litera", "camarote", "cuna", "nino", "infantil", "de dia", "nido", "alta",
                "tienda", "bandeja", "funda", "ropa", "manta", "colcha", "patas")
-    if (tipo.startswith(("estructura de cama", "estructura cama", "cama", "base de cama", "base cama"))
+    if (tipo.startswith(("estructura de cama", "estructura cama", "cama", "base de cama", "base cama",
+                         "muebles de dormitorio"))
             and not any(x in tipo for x in excluir)):
         return "cama"
     return None
