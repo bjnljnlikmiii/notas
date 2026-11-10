@@ -2,9 +2,9 @@ name: Tarea programada
 
 on:
   schedule:
-    # Cada 20 minutos (a los minutos 07, 27 y 47 de cada hora).
+    # Cada 10 minutos (a los minutos 03, 13, 23, 33, 43 y 53 de cada hora).
     # GitHub puede retrasar unos minutos las ejecuciones programadas cuando tiene mucha carga.
-    - cron: "7,27,47 * * * *"
+    - cron: "3,13,23,33,43,53 * * * *"
   workflow_dispatch: # botón "Run workflow" para probarlo a mano
   push: # y una ejecución en cuanto se sube un cambio al código
     branches: [main]
