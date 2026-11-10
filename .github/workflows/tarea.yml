@@ -14,6 +14,7 @@ on:
 
 permissions:
   contents: write # para guardar estado.json en el repositorio
+  actions: read   # para contar las revisiones del día en el resumen
 
 concurrency:
   group: tarea
@@ -46,6 +47,9 @@ jobs:
           CAMA_Y_COLCHON: "1"     # "1" = vigilar aparte camas y colchones
           CAMA_TAMANOS: "full,queen"  # twin, full, queen, king (en España: full = 135-149 cm, queen = 150-170 cm)
           CAMA_DESCUENTO_MINIMO: "1"  # "1" = cualquier rebaja de cama o colchón
+          RESUMEN_DIARIO: "1"     # "1" = un resumen cada noche en el canal
+          RESUMEN_HORA: "21"      # a partir de las 9 p.m. (hora RD)
+          GITHUB_TOKEN: ${{ github.token }}  # solo para contar las revisiones del día
           MAX_FOTOS: "5"          # los N de más descuento llegan con foto; el resto, en una lista sin fotos
         run: python3 tarea.py
 

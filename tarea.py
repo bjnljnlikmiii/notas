@@ -84,6 +84,8 @@ INCLUIR_ULTIMAS = env_num("INCLUIR_ULTIMAS", 1) == 1
 INCLUIR_DESTACADOS = env_num("INCLUIR_DESTACADOS", 1) == 1
 DESTACADOS_SIEMPRE = env_num("DESTACADOS_SIEMPRE", 1) == 1
 MAX_FOTOS = int(env_num("MAX_FOTOS", 5))
+RESUMEN_DIARIO = env_num("RESUMEN_DIARIO", 0) == 1
+RESUMEN_HORA = int(env_num("RESUMEN_HORA", 21))   # hora local (RD) a partir de la que se manda
 CAMA_Y_COLCHON = env_num("CAMA_Y_COLCHON", 0) == 1
 CAMA_TAMANOS = {x.strip().lower() for x in os.environ.get("CAMA_TAMANOS", "full,queen").split(",") if x.strip()}
 CAMA_DESCUENTO_MINIMO = env_num("CAMA_DESCUENTO_MINIMO", 1)
@@ -821,6 +823,26 @@ def buscar_canal_por_nombre(nombre):
 SAL = _t("aWtlYS1ib3Q6")  # no cambiar: identifica los chats ya saludados
 
 
+def revisiones_de_hoy(desde_utc):
+    """(revisiones, fallos) de hoy según GitHub. None si no se puede saber."""
+    token, repo = os.environ.get("GITHUB_TOKEN", ""), os.environ.get("GITHUB_REPOSITORY", "")
+    if not (token and repo):
+        return None
+    url = (f"https://api.github.com/repos/{repo}/actions/runs?per_page=100&"
+           f"created=%3E%3D{desde_utc}")
+    try:
+        req = urllib.request.Request(url, headers={"Authorization": f"Bearer {token}",
+                                                   "Accept": "application/vnd.github+json", "User-Agent": UA})
+        with urllib.request.urlopen(req, timeout=30) as r:
+            corridas = json.loads(r.read().decode("utf-8")).get("workflow_runs", [])
+    except Exception as e:
+        log(f"    no pude contar las revisiones de hoy ({e})")
+        return None
+    terminadas = [c for c in corridas if c.get("status") == "completed"]
+    fallos = sum(1 for c in terminadas if c.get("conclusion") == "failure")
+    return len(terminadas) + 1, fallos   # +1: esta misma revisión
+
+
 def huella(chat):
     """Identifica un chat en estado.json sin guardar su número tal cual."""
     return hashlib.sha256(f"{SAL}{chat}".encode()).hexdigest()[:16]
@@ -1066,6 +1088,38 @@ def main():
             notificar(f"🛏️ <b>Tu cama y colchón ({tamanos}): {n} {'rebaja nueva' if n == 1 else 'rebajas nuevas'}</b> "
                       f"· {fecha}", camas, minimo=CAMA_DESCUENTO_MINIMO)
 
+    # Cuántos productos se avisaron hoy (para el resumen de la noche).
+    avisos_hoy = dict((estado or {}).get("avisos_hoy") or {})
+    if avisos_hoy.get("fecha") != hoy:
+        avisos_hoy = {"fecha": hoy, "n": 0}
+    avisos_hoy["n"] += len(avisar) + (len(camas) if CAMA_Y_COLCHON else 0)
+
+    # Resumen del día, una vez cada noche.
+    resumen_enviado = (estado or {}).get("resumen_diario", "")
+    if (RESUMEN_DIARIO and TELEGRAM_TOKEN and TELEGRAM_CHATS and resumen_enviado != hoy
+            and ahora_rd.hour >= RESUMEN_HORA):
+        medianoche_utc = (datetime(ahora_rd.year, ahora_rd.month, ahora_rd.day, tzinfo=HORA_RD)
+                          .astimezone(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ"))
+        cuentas = revisiones_de_hoy(medianoche_utc)
+        n_a = sum(1 for o in actuales.values() if o["pais"] == "do")
+        n_b = sum(1 for o in actuales.values() if o["pais"] == "es")
+        lineas = [f"✅ <b>Resumen del día</b> ({ahora_rd.strftime('%d/%m/%Y')})"]
+        if cuentas:
+            r, f = cuentas
+            lineas.append(f"Sigo funcionando: hoy hice {r} revisiones"
+                          + (f" ({f} con error)" if f else ", todas bien") + ".")
+        else:
+            lineas.append("Sigo funcionando.")
+        n = avisos_hoy["n"]
+        lineas.append(f"Avisos enviados hoy: {n}" + ("" if n else " (no hubo rebajas nuevas que cumplan tus reglas)"))
+        lineas.append(f"Ahora vigilo: {TIENDA['do']} {n_a:,} ofertas · {TIENDA['es']} {n_b:,} ofertas")
+        if CAMA_Y_COLCHON:
+            n_camas = sum(1 for o in actuales.values() if para_mi_cama(o))
+            lineas.append(f"🛏️ Camas y colchones {tamanos} en oferta ahora: {n_camas}")
+        for chat in TELEGRAM_CHATS:
+            enviar_texto(chat, "\n".join(lineas))
+        resumen_enviado = hoy
+
     # Guardar estado (solo si los mensajes se enviaron bien; si falló algo,
     # el programa ya se detuvo y la próxima vez lo vuelve a intentar).
     limite = (ahora_rd - timedelta(days=DIAS_OLVIDO)).strftime("%Y-%m-%d")
@@ -1084,7 +1138,8 @@ def main():
     # Sin hora dentro del archivo: así solo cambia (y se guarda en GitHub)
     # cuando de verdad cambia algo, no en cada revisión.
     with open(ARCHIVO_ESTADO, "w", encoding="utf-8") as f:
-        json.dump({"canales": dict(sorted(canales.items())), "chats_saludados": sorted(saludados),
+        json.dump({"avisos_hoy": avisos_hoy, "resumen_diario": resumen_enviado,
+                   "canales": dict(sorted(canales.items())), "chats_saludados": sorted(saludados),
                    "resumen_desde": resumen_desde,
                    "secciones_activadas": sorted(secciones_activadas),
                    "productos": dict(sorted(nuevo.items()))},
