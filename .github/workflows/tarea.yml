@@ -60,5 +60,10 @@ jobs:
             exit 0
           fi
           git commit -m "Actualizar estado"
-          git pull --rebase
-          git push
+          # Si GitHub falla un momento al guardar, se reintenta hasta 3 veces.
+          for intento in 1 2 3; do
+            if git pull --rebase && git push; then exit 0; fi
+            echo "No se pudo guardar (intento $intento); reintento en $((intento * 15)) s"
+            sleep $((intento * 15))
+          done
+          exit 1
