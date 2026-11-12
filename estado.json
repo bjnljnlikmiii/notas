@@ -1,7 +1,7 @@
 {
  "avisos_hoy": {
   "fecha": "2026-11-12",
-  "n": 3
+  "n": 4
  },
  "resumen_diario": "2026-11-11",
  "canales": {
@@ -8539,7 +8539,8 @@
   },
   "oferta:39500285": {
    "precio": 94240.0,
-   "visto": "2026-11-12"
+   "visto": "2026-11-12",
+   "ultimas": true
   },
   "oferta:39504877": {
    "precio": 24680.0,
