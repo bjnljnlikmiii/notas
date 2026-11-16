@@ -1,7 +1,7 @@
 {
  "avisos_hoy": {
   "fecha": "2026-11-16",
-  "n": 148
+  "n": 316
  },
  "resumen_diario": "2026-11-15",
  "canales": {
@@ -3576,7 +3576,8 @@
   },
   "es-bajada:s79547276": {
    "precio": 454.96,
-   "visto": "2026-11-16"
+   "visto": "2026-11-16",
+   "ultimas": true
   },
   "es-bajada:s79552908": {
    "precio": 114.99,
@@ -4696,6 +4697,321 @@
    "precio": 21.0,
    "visto": "2026-11-16"
   },
+  "es-ultimas:00130167": {
+   "precio": 11.99,
+   "visto": "2026-11-16",
+   "ultimas": true
+  },
+  "es-ultimas:00190689": {
+   "precio": 3.99,
+   "visto": "2026-11-16",
+   "ultimas": true
+  },
+  "es-ultimas:00343692": {
+   "precio": 25.99,
+   "visto": "2026-11-16",
+   "ultimas": true
+  },
+  "es-ultimas:00391918": {
+   "precio": 29.99,
+   "visto": "2026-11-16",
+   "ultimas": true
+  },
+  "es-ultimas:00433720": {
+   "precio": 7.99,
+   "visto": "2026-11-16",
+   "ultimas": true
+  },
+  "es-ultimas:00471825": {
+   "precio": 29.99,
+   "visto": "2026-11-16",
+   "ultimas": true
+  },
+  "es-ultimas:00534757": {
+   "precio": 79.0,
+   "visto": "2026-11-16",
+   "ultimas": true
+  },
+  "es-ultimas:00552845": {
+   "precio": 9.99,
+   "visto": "2026-11-16",
+   "ultimas": true
+  },
+  "es-ultimas:00554057": {
+   "precio": 35.0,
+   "visto": "2026-11-16",
+   "ultimas": true
+  },
+  "es-ultimas:00567842": {
+   "precio": 29.0,
+   "visto": "2026-11-16",
+   "ultimas": true
+  },
+  "es-ultimas:00586416": {
+   "precio": 7.99,
+   "visto": "2026-11-16",
+   "ultimas": true
+  },
+  "es-ultimas:00586690": {
+   "precio": 14.99,
+   "visto": "2026-11-16",
+   "ultimas": true
+  },
+  "es-ultimas:00604284": {
+   "precio": 4.99,
+   "visto": "2026-11-16",
+   "ultimas": true
+  },
+  "es-ultimas:00605504": {
+   "precio": 11.99,
+   "visto": "2026-11-16",
+   "ultimas": true
+  },
+  "es-ultimas:00619596": {
+   "precio": 5.99,
+   "visto": "2026-11-16",
+   "ultimas": true
+  },
+  "es-ultimas:00625922": {
+   "precio": 29.99,
+   "visto": "2026-11-16",
+   "ultimas": true
+  },
+  "es-ultimas:00627450": {
+   "precio": 12.99,
+   "visto": "2026-11-16",
+   "ultimas": true
+  },
+  "es-ultimas:00657357": {
+   "precio": 19.99,
+   "visto": "2026-11-16",
+   "ultimas": true
+  },
+  "es-ultimas:10463702": {
+   "precio": 5.99,
+   "visto": "2026-11-16",
+   "ultimas": true
+  },
+  "es-ultimas:10467093": {
+   "precio": 299.0,
+   "visto": "2026-11-16",
+   "ultimas": true
+  },
+  "es-ultimas:10477191": {
+   "precio": 7.99,
+   "visto": "2026-11-16",
+   "ultimas": true
+  },
+  "es-ultimas:10482036": {
+   "precio": 2.99,
+   "visto": "2026-11-16",
+   "ultimas": true
+  },
+  "es-ultimas:10536322": {
+   "precio": 39.99,
+   "visto": "2026-11-16",
+   "ultimas": true
+  },
+  "es-ultimas:10554047": {
+   "precio": 19.99,
+   "visto": "2026-11-16",
+   "ultimas": true
+  },
+  "es-ultimas:10554189": {
+   "precio": 12.99,
+   "visto": "2026-11-16",
+   "ultimas": true
+  },
+  "es-ultimas:10555056": {
+   "precio": 3.49,
+   "visto": "2026-11-16",
+   "ultimas": true
+  },
+  "es-ultimas:10555099": {
+   "precio": 79.0,
+   "visto": "2026-11-16",
+   "ultimas": true
+  },
+  "es-ultimas:10574955": {
+   "precio": 17.99,
+   "visto": "2026-11-16",
+   "ultimas": true
+  },
+  "es-ultimas:10581395": {
+   "precio": 12.99,
+   "visto": "2026-11-16",
+   "ultimas": true
+  },
+  "es-ultimas:10584544": {
+   "precio": 29.99,
+   "visto": "2026-11-16",
+   "ultimas": true
+  },
+  "es-ultimas:10617766": {
+   "precio": 12.99,
+   "visto": "2026-11-16",
+   "ultimas": true
+  },
+  "es-ultimas:10625912": {
+   "precio": 39.99,
+   "visto": "2026-11-16",
+   "ultimas": true
+  },
+  "es-ultimas:10636430": {
+   "precio": 8.99,
+   "visto": "2026-11-16",
+   "ultimas": true
+  },
+  "es-ultimas:20351006": {
+   "precio": 29.99,
+   "visto": "2026-11-16",
+   "ultimas": true
+  },
+  "es-ultimas:20402807": {
+   "precio": 19.99,
+   "visto": "2026-11-16",
+   "ultimas": true
+  },
+  "es-ultimas:20430141": {
+   "precio": 14.99,
+   "visto": "2026-11-16",
+   "ultimas": true
+  },
+  "es-ultimas:20432499": {
+   "precio": 1.49,
+   "visto": "2026-11-16",
+   "ultimas": true
+  },
+  "es-ultimas:20448594": {
+   "precio": 12.99,
+   "visto": "2026-11-16",
+   "ultimas": true
+  },
+  "es-ultimas:20504194": {
+   "precio": 2.99,
+   "visto": "2026-11-16",
+   "ultimas": true
+  },
+  "es-ultimas:20512976": {
+   "precio": 19.99,
+   "visto": "2026-11-16",
+   "ultimas": true
+  },
+  "es-ultimas:20525356": {
+   "precio": 39.99,
+   "visto": "2026-11-16",
+   "ultimas": true
+  },
+  "es-ultimas:20535685": {
+   "precio": 14.99,
+   "visto": "2026-11-16",
+   "ultimas": true
+  },
+  "es-ultimas:20559407": {
+   "precio": 5.99,
+   "visto": "2026-11-16",
+   "ultimas": true
+  },
+  "es-ultimas:20579448": {
+   "precio": 19.99,
+   "visto": "2026-11-16",
+   "ultimas": true
+  },
+  "es-ultimas:20584534": {
+   "precio": 39.99,
+   "visto": "2026-11-16",
+   "ultimas": true
+  },
+  "es-ultimas:20601010": {
+   "precio": 99.99,
+   "visto": "2026-11-16",
+   "ultimas": true
+  },
+  "es-ultimas:20605447": {
+   "precio": 19.99,
+   "visto": "2026-11-16",
+   "ultimas": true
+  },
+  "es-ultimas:20610199": {
+   "precio": 6.99,
+   "visto": "2026-11-16",
+   "ultimas": true
+  },
+  "es-ultimas:20617389": {
+   "precio": 9.99,
+   "visto": "2026-11-16",
+   "ultimas": true
+  },
+  "es-ultimas:20619840": {
+   "precio": 2.99,
+   "visto": "2026-11-16",
+   "ultimas": true
+  },
+  "es-ultimas:20620099": {
+   "precio": 4.99,
+   "visto": "2026-11-16",
+   "ultimas": true
+  },
+  "es-ultimas:20625493": {
+   "precio": 24.99,
+   "visto": "2026-11-16",
+   "ultimas": true
+  },
+  "es-ultimas:20657356": {
+   "precio": 4.99,
+   "visto": "2026-11-16",
+   "ultimas": true
+  },
+  "es-ultimas:30193323": {
+   "precio": 5.99,
+   "visto": "2026-11-16",
+   "ultimas": true
+  },
+  "es-ultimas:30253067": {
+   "precio": 59.99,
+   "visto": "2026-11-16",
+   "ultimas": true
+  },
+  "es-ultimas:30253072": {
+   "precio": 29.99,
+   "visto": "2026-11-16",
+   "ultimas": true
+  },
+  "es-ultimas:30271491": {
+   "precio": 5.99,
+   "visto": "2026-11-16",
+   "ultimas": true
+  },
+  "es-ultimas:30343742": {
+   "precio": 29.99,
+   "visto": "2026-11-16",
+   "ultimas": true
+  },
+  "es-ultimas:30485265": {
+   "precio": 5.49,
+   "visto": "2026-11-16",
+   "ultimas": true
+  },
+  "es-ultimas:30532554": {
+   "precio": 99.0,
+   "visto": "2026-11-16",
+   "ultimas": true
+  },
+  "es-ultimas:30533209": {
+   "precio": 1.99,
+   "visto": "2026-11-16",
+   "ultimas": true
+  },
+  "es-ultimas:30555036": {
+   "precio": 19.99,
+   "visto": "2026-11-16",
+   "ultimas": true
+  },
+  "es-ultimas:30558916": {
+   "precio": 19.99,
+   "visto": "2026-11-16",
+   "ultimas": true
+  },
   "es-ultimas:30582271": {
    "precio": 19.99,
    "visto": "2026-11-16",
@@ -4706,8 +5022,343 @@
    "visto": "2026-11-16",
    "ultimas": true
   },
+  "es-ultimas:40471828": {
+   "precio": 34.99,
+   "visto": "2026-11-16",
+   "ultimas": true
+  },
+  "es-ultimas:40497395": {
+   "precio": 34.99,
+   "visto": "2026-11-16",
+   "ultimas": true
+  },
+  "es-ultimas:40511056": {
+   "precio": 229.0,
+   "visto": "2026-11-16",
+   "ultimas": true
+  },
+  "es-ultimas:40523827": {
+   "precio": 4.99,
+   "visto": "2026-11-16",
+   "ultimas": true
+  },
+  "es-ultimas:40532704": {
+   "precio": 89.0,
+   "visto": "2026-11-16",
+   "ultimas": true
+  },
+  "es-ultimas:40603225": {
+   "precio": 4.99,
+   "visto": "2026-11-16",
+   "ultimas": true
+  },
+  "es-ultimas:40605535": {
+   "precio": 8.99,
+   "visto": "2026-11-16",
+   "ultimas": true
+  },
+  "es-ultimas:40629739": {
+   "precio": 19.99,
+   "visto": "2026-11-16",
+   "ultimas": true
+  },
+  "es-ultimas:40657355": {
+   "precio": 2.99,
+   "visto": "2026-11-16",
+   "ultimas": true
+  },
+  "es-ultimas:50138444": {
+   "precio": 5.99,
+   "visto": "2026-11-16",
+   "ultimas": true
+  },
+  "es-ultimas:50392029": {
+   "precio": 29.99,
+   "visto": "2026-11-16",
+   "ultimas": true
+  },
+  "es-ultimas:50417614": {
+   "precio": 29.99,
+   "visto": "2026-11-16",
+   "ultimas": true
+  },
+  "es-ultimas:50464115": {
+   "precio": 34.99,
+   "visto": "2026-11-16",
+   "ultimas": true
+  },
+  "es-ultimas:50471837": {
+   "precio": 24.99,
+   "visto": "2026-11-16",
+   "ultimas": true
+  },
+  "es-ultimas:50532850": {
+   "precio": 30.0,
+   "visto": "2026-11-16",
+   "ultimas": true
+  },
+  "es-ultimas:50597158": {
+   "precio": 69.99,
+   "visto": "2026-11-16",
+   "ultimas": true
+  },
+  "es-ultimas:50610193": {
+   "precio": 3.5,
+   "visto": "2026-11-16",
+   "ultimas": true
+  },
+  "es-ultimas:50617689": {
+   "precio": 3.99,
+   "visto": "2026-11-16",
+   "ultimas": true
+  },
+  "es-ultimas:50625260": {
+   "precio": 9.99,
+   "visto": "2026-11-16",
+   "ultimas": true
+  },
+  "es-ultimas:50630558": {
+   "precio": 19.99,
+   "visto": "2026-11-16",
+   "ultimas": true
+  },
+  "es-ultimas:50636428": {
+   "precio": 9.99,
+   "visto": "2026-11-16",
+   "ultimas": true
+  },
+  "es-ultimas:60428891": {
+   "precio": 3.99,
+   "visto": "2026-11-16",
+   "ultimas": true
+  },
+  "es-ultimas:60447347": {
+   "precio": 6.99,
+   "visto": "2026-11-16",
+   "ultimas": true
+  },
+  "es-ultimas:60463686": {
+   "precio": 12.99,
+   "visto": "2026-11-16",
+   "ultimas": true
+  },
+  "es-ultimas:60463714": {
+   "precio": 6.99,
+   "visto": "2026-11-16",
+   "ultimas": true
+  },
+  "es-ultimas:60499261": {
+   "precio": 4.99,
+   "visto": "2026-11-16",
+   "ultimas": true
+  },
+  "es-ultimas:60572398": {
+   "precio": 9.99,
+   "visto": "2026-11-16",
+   "ultimas": true
+  },
+  "es-ultimas:60580893": {
+   "precio": 12.99,
+   "visto": "2026-11-16",
+   "ultimas": true
+  },
   "es-ultimas:60607388": {
    "precio": 23.0,
+   "visto": "2026-11-16",
+   "ultimas": true
+  },
+  "es-ultimas:60610197": {
+   "precio": 3.49,
+   "visto": "2026-11-16",
+   "ultimas": true
+  },
+  "es-ultimas:60619598": {
+   "precio": 2.99,
+   "visto": "2026-11-16",
+   "ultimas": true
+  },
+  "es-ultimas:60620097": {
+   "precio": 3.99,
+   "visto": "2026-11-16",
+   "ultimas": true
+  },
+  "es-ultimas:60620101": {
+   "precio": 6.99,
+   "visto": "2026-11-16",
+   "ultimas": true
+  },
+  "es-ultimas:60623637": {
+   "precio": 1.49,
+   "visto": "2026-11-16",
+   "ultimas": true
+  },
+  "es-ultimas:60625491": {
+   "precio": 14.99,
+   "visto": "2026-11-16",
+   "ultimas": true
+  },
+  "es-ultimas:70090380": {
+   "precio": 6.99,
+   "visto": "2026-11-16",
+   "ultimas": true
+  },
+  "es-ultimas:70186660": {
+   "precio": 34.99,
+   "visto": "2026-11-16",
+   "ultimas": true
+  },
+  "es-ultimas:70338456": {
+   "precio": 1.99,
+   "visto": "2026-11-16",
+   "ultimas": true
+  },
+  "es-ultimas:70479644": {
+   "precio": 9.99,
+   "visto": "2026-11-16",
+   "ultimas": true
+  },
+  "es-ultimas:70519763": {
+   "precio": 59.0,
+   "visto": "2026-11-16",
+   "ultimas": true
+  },
+  "es-ultimas:70527777": {
+   "precio": 2.99,
+   "visto": "2026-11-16",
+   "ultimas": true
+  },
+  "es-ultimas:70547596": {
+   "precio": 11.99,
+   "visto": "2026-11-16",
+   "ultimas": true
+  },
+  "es-ultimas:70577079": {
+   "precio": 3.99,
+   "visto": "2026-11-16",
+   "ultimas": true
+  },
+  "es-ultimas:70583711": {
+   "precio": 12.99,
+   "visto": "2026-11-16",
+   "ultimas": true
+  },
+  "es-ultimas:70584621": {
+   "precio": 19.99,
+   "visto": "2026-11-16",
+   "ultimas": true
+  },
+  "es-ultimas:70603498": {
+   "precio": 69.0,
+   "visto": "2026-11-16",
+   "ultimas": true
+  },
+  "es-ultimas:70621204": {
+   "precio": 12.99,
+   "visto": "2026-11-16",
+   "ultimas": true
+  },
+  "es-ultimas:80460408": {
+   "precio": 24.99,
+   "visto": "2026-11-16",
+   "ultimas": true
+  },
+  "es-ultimas:80463713": {
+   "precio": 12.99,
+   "visto": "2026-11-16",
+   "ultimas": true
+  },
+  "es-ultimas:80471831": {
+   "precio": 39.99,
+   "visto": "2026-11-16",
+   "ultimas": true
+  },
+  "es-ultimas:80502922": {
+   "precio": 4.99,
+   "visto": "2026-11-16",
+   "ultimas": true
+  },
+  "es-ultimas:80507793": {
+   "precio": 34.99,
+   "visto": "2026-11-16",
+   "ultimas": true
+  },
+  "es-ultimas:80526503": {
+   "precio": 2.99,
+   "visto": "2026-11-16",
+   "ultimas": true
+  },
+  "es-ultimas:80533198": {
+   "precio": 3.99,
+   "visto": "2026-11-16",
+   "ultimas": true
+  },
+  "es-ultimas:80534876": {
+   "precio": 29.99,
+   "visto": "2026-11-16",
+   "ultimas": true
+  },
+  "es-ultimas:80536314": {
+   "precio": 49.99,
+   "visto": "2026-11-16",
+   "ultimas": true
+  },
+  "es-ultimas:80539077": {
+   "precio": 29.99,
+   "visto": "2026-11-16",
+   "ultimas": true
+  },
+  "es-ultimas:80574099": {
+   "precio": 299.0,
+   "visto": "2026-11-16",
+   "ultimas": true
+  },
+  "es-ultimas:80587718": {
+   "precio": 109.0,
+   "visto": "2026-11-16",
+   "ultimas": true
+  },
+  "es-ultimas:80591230": {
+   "precio": 29.99,
+   "visto": "2026-11-16",
+   "ultimas": true
+  },
+  "es-ultimas:80598095": {
+   "precio": 59.99,
+   "visto": "2026-11-16",
+   "ultimas": true
+  },
+  "es-ultimas:90271493": {
+   "precio": 9.99,
+   "visto": "2026-11-16",
+   "ultimas": true
+  },
+  "es-ultimas:90280826": {
+   "precio": 24.99,
+   "visto": "2026-11-16",
+   "ultimas": true
+  },
+  "es-ultimas:90444366": {
+   "precio": 19.99,
+   "visto": "2026-11-16",
+   "ultimas": true
+  },
+  "es-ultimas:90488204": {
+   "precio": 4.99,
+   "visto": "2026-11-16",
+   "ultimas": true
+  },
+  "es-ultimas:90545228": {
+   "precio": 19.99,
+   "visto": "2026-11-16",
+   "ultimas": true
+  },
+  "es-ultimas:90557886": {
+   "precio": 69.0,
+   "visto": "2026-11-16",
+   "ultimas": true
+  },
+  "es-ultimas:90579440": {
+   "precio": 29.99,
    "visto": "2026-11-16",
    "ultimas": true
   },
@@ -4716,8 +5367,158 @@
    "visto": "2026-11-16",
    "ultimas": true
   },
+  "es-ultimas:90591625": {
+   "precio": 79.99,
+   "visto": "2026-11-16",
+   "ultimas": true
+  },
+  "es-ultimas:90610191": {
+   "precio": 2.0,
+   "visto": "2026-11-16",
+   "ultimas": true
+  },
+  "es-ultimas:90621203": {
+   "precio": 14.99,
+   "visto": "2026-11-16",
+   "ultimas": true
+  },
+  "es-ultimas:90625593": {
+   "precio": 0.69,
+   "visto": "2026-11-16",
+   "ultimas": true
+  },
+  "es-ultimas:90630325": {
+   "precio": 7.99,
+   "visto": "2026-11-16",
+   "ultimas": true
+  },
+  "es-ultimas:90630429": {
+   "precio": 27.99,
+   "visto": "2026-11-16",
+   "ultimas": true
+  },
+  "es-ultimas:s19546722": {
+   "precio": 95.0,
+   "visto": "2026-11-16",
+   "ultimas": true
+  },
+  "es-ultimas:s29557772": {
+   "precio": 184.99,
+   "visto": "2026-11-16",
+   "ultimas": true
+  },
+  "es-ultimas:s29561651": {
+   "precio": 875.0,
+   "visto": "2026-11-16",
+   "ultimas": true
+  },
+  "es-ultimas:s29600167": {
+   "precio": 5.49,
+   "visto": "2026-11-16",
+   "ultimas": true
+  },
+  "es-ultimas:s39569312": {
+   "precio": 1075.0,
+   "visto": "2026-11-16",
+   "ultimas": true
+  },
+  "es-ultimas:s49569321": {
+   "precio": 1313.0,
+   "visto": "2026-11-16",
+   "ultimas": true
+  },
+  "es-ultimas:s49596824": {
+   "precio": 535.0,
+   "visto": "2026-11-16",
+   "ultimas": true
+  },
+  "es-ultimas:s49610090": {
+   "precio": 435.0,
+   "visto": "2026-11-16",
+   "ultimas": true
+  },
+  "es-ultimas:s59547098": {
+   "precio": 243.99,
+   "visto": "2026-11-16",
+   "ultimas": true
+  },
+  "es-ultimas:s59569306": {
+   "precio": 725.0,
+   "visto": "2026-11-16",
+   "ultimas": true
+  },
+  "es-ultimas:s69596644": {
+   "precio": 435.0,
+   "visto": "2026-11-16",
+   "ultimas": true
+  },
+  "es-ultimas:s69625528": {
+   "precio": 425.0,
+   "visto": "2026-11-16",
+   "ultimas": true
+  },
+  "es-ultimas:s79536843": {
+   "precio": 49.97,
+   "visto": "2026-11-16",
+   "ultimas": true
+  },
+  "es-ultimas:s79596592": {
+   "precio": 297.0,
+   "visto": "2026-11-16",
+   "ultimas": true
+  },
+  "es-ultimas:s79596813": {
+   "precio": 317.0,
+   "visto": "2026-11-16",
+   "ultimas": true
+  },
+  "es-ultimas:s79610079": {
+   "precio": 375.0,
+   "visto": "2026-11-16",
+   "ultimas": true
+  },
+  "es-ultimas:s89547167": {
+   "precio": 323.99,
+   "visto": "2026-11-16",
+   "ultimas": true
+  },
+  "es-ultimas:s89561648": {
+   "precio": 925.0,
+   "visto": "2026-11-16",
+   "ultimas": true
+  },
+  "es-ultimas:s89568739": {
+   "precio": 515.0,
+   "visto": "2026-11-16",
+   "ultimas": true
+  },
+  "es-ultimas:s89600169": {
+   "precio": 10.49,
+   "visto": "2026-11-16",
+   "ultimas": true
+  },
+  "es-ultimas:s99548878": {
+   "precio": 935.0,
+   "visto": "2026-11-16",
+   "ultimas": true
+  },
   "es-ultimas:s99582749": {
    "precio": 39.0,
+   "visto": "2026-11-16",
+   "ultimas": true
+  },
+  "es-ultimas:s99596925": {
+   "precio": 683.0,
+   "visto": "2026-11-16",
+   "ultimas": true
+  },
+  "es-ultimas:s99610097": {
+   "precio": 613.0,
+   "visto": "2026-11-16",
+   "ultimas": true
+  },
+  "es-ultimas:s99612402": {
+   "precio": 515.0,
    "visto": "2026-11-16",
    "ultimas": true
   },
@@ -4913,6 +5714,10 @@
    "precio": 19595.0,
    "visto": "2026-11-16"
   },
+  "oferta:00405048": {
+   "precio": 3695.0,
+   "visto": "2026-11-16"
+  },
   "oferta:00408438": {
    "precio": 440.0,
    "visto": "2026-11-15"
@@ -5099,6 +5904,10 @@
   },
   "oferta:00559984": {
    "precio": 349.0,
+   "visto": "2026-11-16"
+  },
+  "oferta:00562076": {
+   "precio": 1695.0,
    "visto": "2026-11-16"
   },
   "oferta:00562104": {
@@ -6719,8 +7528,8 @@
    "visto": "2026-11-16"
   },
   "oferta:09610214": {
-   "precio": 1210.0,
-   "visto": "2026-11-13"
+   "precio": 1064.0,
+   "visto": "2026-11-16"
   },
   "oferta:09610431": {
    "precio": 56285.0,
@@ -6806,12 +7615,16 @@
    "precio": 97220.0,
    "visto": "2026-11-16"
   },
+  "oferta:09617649": {
+   "precio": 3270.0,
+   "visto": "2026-11-16"
+  },
   "oferta:09618470": {
    "precio": 29830.0,
    "visto": "2026-11-16"
   },
   "oferta:09619177": {
-   "precio": 62335.0,
+   "precio": 61060.0,
    "visto": "2026-11-16"
   },
   "oferta:09619342": {
@@ -6819,7 +7632,7 @@
    "visto": "2026-11-16"
   },
   "oferta:09619926": {
-   "precio": 94640.0,
+   "precio": 93980.0,
    "visto": "2026-11-16"
   },
   "oferta:09620623": {
@@ -6827,7 +7640,7 @@
    "visto": "2026-11-16"
   },
   "oferta:09620760": {
-   "precio": 53100.0,
+   "precio": 52770.0,
    "visto": "2026-11-16"
   },
   "oferta:09622858": {
@@ -7006,6 +7819,10 @@
    "precio": 14595.0,
    "visto": "2026-11-16"
   },
+  "oferta:09656443": {
+   "precio": 101628.0,
+   "visto": "2026-11-16"
+  },
   "oferta:09819505": {
    "precio": 715.0,
    "visto": "2026-11-16"
@@ -7157,7 +7974,8 @@
   },
   "oferta:10508079": {
    "precio": 1195.0,
-   "visto": "2026-11-16"
+   "visto": "2026-11-16",
+   "destacado": "2026-11-16"
   },
   "oferta:10513896": {
    "precio": 2395.0,
@@ -7528,6 +8346,10 @@
   "oferta:10605141": {
    "precio": 620.0,
    "visto": "2026-11-15"
+  },
+  "oferta:10605315": {
+   "precio": 595.0,
+   "visto": "2026-11-16"
   },
   "oferta:10605693": {
    "precio": 619.0,
@@ -8150,7 +8972,7 @@
    "visto": "2026-11-16"
   },
   "oferta:19471383": {
-   "precio": 168625.0,
+   "precio": 167575.0,
    "visto": "2026-11-16"
   },
   "oferta:19472429": {
@@ -8174,7 +8996,7 @@
    "visto": "2026-11-16"
   },
   "oferta:19490107": {
-   "precio": 106735.0,
+   "precio": 106240.0,
    "visto": "2026-11-16"
   },
   "oferta:19490273": {
@@ -8900,7 +9722,7 @@
    "visto": "2026-11-16"
   },
   "oferta:19619186": {
-   "precio": 73575.0,
+   "precio": 72645.0,
    "visto": "2026-11-16"
   },
   "oferta:19619761": {
@@ -8908,11 +9730,11 @@
    "visto": "2026-11-16"
   },
   "oferta:19619803": {
-   "precio": 35795.0,
+   "precio": 35465.0,
    "visto": "2026-11-16"
   },
   "oferta:19620608": {
-   "precio": 195110.0,
+   "precio": 194120.0,
    "visto": "2026-11-16"
   },
   "oferta:19620731": {
@@ -8920,7 +9742,7 @@
    "visto": "2026-11-16"
   },
   "oferta:19620769": {
-   "precio": 52330.0,
+   "precio": 52000.0,
    "visto": "2026-11-16"
   },
   "oferta:19620788": {
@@ -9033,6 +9855,10 @@
   },
   "oferta:19631616": {
    "precio": 8492.0,
+   "visto": "2026-11-16"
+  },
+  "oferta:19631664": {
+   "precio": 7257.0,
    "visto": "2026-11-16"
   },
   "oferta:19633875": {
@@ -9165,6 +9991,10 @@
   },
   "oferta:20434827": {
    "precio": 35695.0,
+   "visto": "2026-11-16"
+  },
+  "oferta:20446236": {
+   "precio": 419.0,
    "visto": "2026-11-16"
   },
   "oferta:20452307": {
@@ -9534,8 +10364,8 @@
    "visto": "2026-11-16"
   },
   "oferta:20598753": {
-   "precio": 219.0,
-   "visto": "2026-11-15"
+   "precio": 185.0,
+   "visto": "2026-11-16"
   },
   "oferta:20599168": {
    "precio": 13595.0,
@@ -9648,16 +10478,16 @@
    "visto": "2026-11-16"
   },
   "oferta:20610199": {
-   "precio": 565.0,
-   "visto": "2026-11-13"
+   "precio": 419.0,
+   "visto": "2026-11-16"
   },
   "oferta:20611033": {
    "precio": 13595.0,
    "visto": "2026-11-16"
   },
   "oferta:20612018": {
-   "precio": 1355.0,
-   "visto": "2026-11-15"
+   "precio": 1095.0,
+   "visto": "2026-11-16"
   },
   "oferta:20612396": {
    "precio": 559.0,
@@ -10284,7 +11114,7 @@
    "visto": "2026-11-16"
   },
   "oferta:29485209": {
-   "precio": 150875.0,
+   "precio": 149825.0,
    "visto": "2026-11-16"
   },
   "oferta:29485252": {
@@ -10368,7 +11198,7 @@
    "visto": "2026-11-16"
   },
   "oferta:29510628": {
-   "precio": 154175.0,
+   "precio": 152630.0,
    "visto": "2026-11-16"
   },
   "oferta:29516084": {
@@ -11146,6 +11976,10 @@
    "precio": 57210.0,
    "visto": "2026-11-15"
   },
+  "oferta:29633709": {
+   "precio": 73633.0,
+   "visto": "2026-11-16"
+  },
   "oferta:29634167": {
    "precio": 34935.0,
    "visto": "2026-11-15"
@@ -11507,12 +12341,16 @@
    "precio": 795.0,
    "visto": "2026-11-15"
   },
+  "oferta:30576251": {
+   "precio": 1095.0,
+   "visto": "2026-11-16"
+  },
   "oferta:30576500": {
    "precio": 6295.0,
    "visto": "2026-11-16"
   },
   "oferta:30576519": {
-   "precio": 895.0,
+   "precio": 875.0,
    "visto": "2026-11-16",
    "destacado": "2026-11-16"
   },
@@ -11594,6 +12432,10 @@
   },
   "oferta:30589531": {
    "precio": 350.0,
+   "visto": "2026-11-16"
+  },
+  "oferta:30590450": {
+   "precio": 1755.0,
    "visto": "2026-11-16"
   },
   "oferta:30592755": {
@@ -11757,6 +12599,10 @@
   "oferta:30609195": {
    "precio": 635.0,
    "visto": "2026-11-14"
+  },
+  "oferta:30609355": {
+   "precio": 469.0,
+   "visto": "2026-11-16"
   },
   "oferta:30609888": {
    "precio": 2595.0,
@@ -12384,6 +13230,10 @@
   },
   "oferta:39468761": {
    "precio": 23835.0,
+   "visto": "2026-11-16"
+  },
+  "oferta:39469483": {
+   "precio": 166375.0,
    "visto": "2026-11-16"
   },
   "oferta:39469497": {
@@ -13094,7 +13944,7 @@
    "visto": "2026-11-16"
   },
   "oferta:39617624": {
-   "precio": 94320.0,
+   "precio": 93990.0,
    "visto": "2026-11-16"
   },
   "oferta:39617638": {
@@ -13127,11 +13977,11 @@
    "visto": "2026-11-16"
   },
   "oferta:39619883": {
-   "precio": 115435.0,
+   "precio": 113800.0,
    "visto": "2026-11-16"
   },
   "oferta:39619920": {
-   "precio": 97340.0,
+   "precio": 96680.0,
    "visto": "2026-11-16"
   },
   "oferta:39619944": {
@@ -13254,6 +14104,10 @@
    "precio": 23795.0,
    "visto": "2026-11-16"
   },
+  "oferta:39631837": {
+   "precio": 32629.0,
+   "visto": "2026-11-16"
+  },
   "oferta:39633638": {
    "precio": 29730.0,
    "visto": "2026-11-16"
@@ -13292,6 +14146,10 @@
   },
   "oferta:39648060": {
    "precio": 19955.0,
+   "visto": "2026-11-16"
+  },
+  "oferta:39656446": {
+   "precio": 125895.0,
    "visto": "2026-11-16"
   },
   "oferta:39656583": {
@@ -13453,6 +14311,10 @@
   },
   "oferta:40477632": {
    "precio": 115.0,
+   "visto": "2026-11-16"
+  },
+  "oferta:40484109": {
+   "precio": 695.0,
    "visto": "2026-11-16"
   },
   "oferta:40488895": {
@@ -13724,6 +14586,10 @@
    "precio": 19545.0,
    "visto": "2026-11-15"
   },
+  "oferta:40594853": {
+   "precio": 449.0,
+   "visto": "2026-11-16"
+  },
   "oferta:40595522": {
    "precio": 1495.0,
    "visto": "2026-11-13"
@@ -13863,13 +14729,17 @@
    "precio": 1295.0,
    "visto": "2026-11-16"
   },
+  "oferta:40610004": {
+   "precio": 1895.0,
+   "visto": "2026-11-16"
+  },
   "oferta:40610202": {
    "precio": 555.0,
    "visto": "2026-11-16"
   },
   "oferta:40610278": {
-   "precio": 499.0,
-   "visto": "2026-11-15"
+   "precio": 399.0,
+   "visto": "2026-11-16"
   },
   "oferta:40610424": {
    "precio": 13590.0,
@@ -14575,6 +15445,10 @@
    "precio": 107235.0,
    "visto": "2026-11-16"
   },
+  "oferta:49485109": {
+   "precio": 154880.0,
+   "visto": "2026-11-16"
+  },
   "oferta:49485345": {
    "precio": 35490.0,
    "visto": "2026-11-16"
@@ -14697,6 +15571,10 @@
   },
   "oferta:49544255": {
    "precio": 34310.0,
+   "visto": "2026-11-16"
+  },
+  "oferta:49544948": {
+   "precio": 99290.0,
    "visto": "2026-11-16"
   },
   "oferta:49544953": {
@@ -15198,7 +16076,7 @@
    "visto": "2026-11-16"
   },
   "oferta:49604089": {
-   "precio": 71775.0,
+   "precio": 70845.0,
    "visto": "2026-11-16"
   },
   "oferta:49605343": {
@@ -15326,7 +16204,7 @@
    "visto": "2026-11-16"
   },
   "oferta:49617652": {
-   "precio": 156820.0,
+   "precio": 156490.0,
    "visto": "2026-11-16"
   },
   "oferta:49617713": {
@@ -15350,7 +16228,7 @@
    "visto": "2026-11-16"
   },
   "oferta:49619929": {
-   "precio": 94640.0,
+   "precio": 93980.0,
    "visto": "2026-11-16"
   },
   "oferta:49620409": {
@@ -15403,6 +16281,10 @@
   },
   "oferta:49626147": {
    "precio": 13000.0,
+   "visto": "2026-11-16"
+  },
+  "oferta:49626821": {
+   "precio": 89696.0,
    "visto": "2026-11-16"
   },
   "oferta:49627359": {
@@ -15501,6 +16383,10 @@
    "precio": 26370.0,
    "visto": "2026-11-16"
   },
+  "oferta:49631832": {
+   "precio": 32629.0,
+   "visto": "2026-11-16"
+  },
   "oferta:49633628": {
    "precio": 20835.0,
    "visto": "2026-11-16"
@@ -15512,6 +16398,10 @@
   "oferta:49633685": {
    "precio": 57210.0,
    "visto": "2026-11-15"
+  },
+  "oferta:49633708": {
+   "precio": 170106.0,
+   "visto": "2026-11-16"
   },
   "oferta:49633794": {
    "precio": 37685.0,
@@ -15527,6 +16417,10 @@
   },
   "oferta:49634736": {
    "precio": 19795.0,
+   "visto": "2026-11-16"
+  },
+  "oferta:49635340": {
+   "precio": 127238.0,
    "visto": "2026-11-16"
   },
   "oferta:49654828": {
@@ -15623,6 +16517,10 @@
   },
   "oferta:50426067": {
    "precio": 1525.0,
+   "visto": "2026-11-16"
+  },
+  "oferta:50426802": {
+   "precio": 1895.0,
    "visto": "2026-11-16"
   },
   "oferta:50446579": {
@@ -16793,7 +17691,7 @@
    "visto": "2026-11-16"
   },
   "oferta:59510405": {
-   "precio": 92330.0,
+   "precio": 91835.0,
    "visto": "2026-11-16"
   },
   "oferta:59515610": {
@@ -17342,7 +18240,7 @@
    "visto": "2026-11-16"
   },
   "oferta:59607638": {
-   "precio": 106860.0,
+   "precio": 106530.0,
    "visto": "2026-11-16"
   },
   "oferta:59608143": {
@@ -17455,7 +18353,7 @@
    "visto": "2026-11-14"
   },
   "oferta:59619349": {
-   "precio": 20795.0,
+   "precio": 20465.0,
    "visto": "2026-11-16"
   },
   "oferta:59619373": {
@@ -17463,7 +18361,7 @@
    "visto": "2026-11-16"
   },
   "oferta:59619797": {
-   "precio": 36995.0,
+   "precio": 36665.0,
    "visto": "2026-11-16"
   },
   "oferta:59619815": {
@@ -17471,15 +18369,15 @@
    "visto": "2026-11-16"
   },
   "oferta:59619877": {
-   "precio": 116330.0,
+   "precio": 115340.0,
    "visto": "2026-11-16"
   },
   "oferta:59620277": {
-   "precio": 129335.0,
+   "precio": 128510.0,
    "visto": "2026-11-16"
   },
   "oferta:59620772": {
-   "precio": 52330.0,
+   "precio": 52000.0,
    "visto": "2026-11-16"
   },
   "oferta:59620791": {
@@ -17542,6 +18440,10 @@
    "precio": 30345.0,
    "visto": "2026-11-16"
   },
+  "oferta:59626298": {
+   "precio": 57846.0,
+   "visto": "2026-11-16"
+  },
   "oferta:59626340": {
    "precio": 18745.0,
    "visto": "2026-11-16"
@@ -17552,6 +18454,10 @@
   },
   "oferta:59626552": {
    "precio": 4780.0,
+   "visto": "2026-11-16"
+  },
+  "oferta:59626825": {
+   "precio": 95127.0,
    "visto": "2026-11-16"
   },
   "oferta:59626830": {
@@ -17642,6 +18548,10 @@
    "precio": 39170.0,
    "visto": "2026-11-16"
   },
+  "oferta:59633699": {
+   "precio": 157905.0,
+   "visto": "2026-11-16"
+  },
   "oferta:59633816": {
    "precio": 51170.0,
    "visto": "2026-11-16"
@@ -17665,6 +18575,10 @@
   "oferta:59634627": {
    "precio": 67610.0,
    "visto": "2026-11-13"
+  },
+  "oferta:59635033": {
+   "precio": 101628.0,
+   "visto": "2026-11-16"
   },
   "oferta:59638673": {
    "precio": 9355.0,
@@ -17690,8 +18604,16 @@
    "precio": 26085.0,
    "visto": "2026-11-16"
   },
+  "oferta:59656445": {
+   "precio": 124260.0,
+   "visto": "2026-11-16"
+  },
   "oferta:60131734": {
    "precio": 9595.0,
+   "visto": "2026-11-16"
+  },
+  "oferta:60136623": {
+   "precio": 389.0,
    "visto": "2026-11-16"
   },
   "oferta:60137571": {
@@ -18425,8 +19347,8 @@
    "visto": "2026-11-13"
   },
   "oferta:60632788": {
-   "precio": 209.0,
-   "visto": "2026-11-13"
+   "precio": 299.0,
+   "visto": "2026-11-16"
   },
   "oferta:60633151": {
    "precio": 1835.0,
@@ -18858,7 +19780,7 @@
    "visto": "2026-11-16"
   },
   "oferta:69485170": {
-   "precio": 134930.0,
+   "precio": 133880.0,
    "visto": "2026-11-16"
   },
   "oferta:69489173": {
@@ -19274,7 +20196,7 @@
    "visto": "2026-11-16"
   },
   "oferta:69578579": {
-   "precio": 10495.0,
+   "precio": 10165.0,
    "visto": "2026-11-16"
   },
   "oferta:69578602": {
@@ -19479,7 +20401,7 @@
    "visto": "2026-11-16"
   },
   "oferta:69604069": {
-   "precio": 56735.0,
+   "precio": 55805.0,
    "visto": "2026-11-16"
   },
   "oferta:69604093": {
@@ -19643,7 +20565,7 @@
    "visto": "2026-11-16"
   },
   "oferta:69619358": {
-   "precio": 20795.0,
+   "precio": 19820.0,
    "visto": "2026-11-16"
   },
   "oferta:69619749": {
@@ -19808,6 +20730,10 @@
   },
   "oferta:69632171": {
    "precio": 26370.0,
+   "visto": "2026-11-16"
+  },
+  "oferta:69633689": {
+   "precio": 30994.0,
    "visto": "2026-11-16"
   },
   "oferta:69634165": {
@@ -21266,7 +22192,7 @@
    "visto": "2026-11-16"
   },
   "oferta:79510616": {
-   "precio": 274155.0,
+   "precio": 272115.0,
    "visto": "2026-11-16"
   },
   "oferta:79517024": {
@@ -21868,7 +22794,7 @@
    "visto": "2026-11-16"
   },
   "oferta:79617641": {
-   "precio": 278080.0,
+   "precio": 277420.0,
    "visto": "2026-11-16"
   },
   "oferta:79619051": {
@@ -21904,7 +22830,7 @@
    "visto": "2026-11-16"
   },
   "oferta:79620894": {
-   "precio": 181665.0,
+   "precio": 180510.0,
    "visto": "2026-11-16"
   },
   "oferta:79622826": {
@@ -21948,11 +22874,15 @@
    "visto": "2026-11-16"
   },
   "oferta:79626278": {
-   "precio": 38736.0,
+   "precio": 34641.0,
    "visto": "2026-11-16"
   },
   "oferta:79626320": {
    "precio": 11645.0,
+   "visto": "2026-11-16"
+  },
+  "oferta:79626792": {
+   "precio": 104256.0,
    "visto": "2026-11-16"
   },
   "oferta:79629168": {
@@ -22022,6 +22952,10 @@
   "oferta:79649982": {
    "precio": 64590.0,
    "visto": "2026-11-14"
+  },
+  "oferta:79657123": {
+   "precio": 32629.0,
+   "visto": "2026-11-16"
   },
   "oferta:79917381": {
    "precio": 47580.0,
@@ -22384,6 +23318,10 @@
    "visto": "2026-11-16",
    "destacado": "2026-11-16"
   },
+  "oferta:80587129": {
+   "precio": 1695.0,
+   "visto": "2026-11-16"
+  },
   "oferta:80587803": {
    "precio": 2585.0,
    "visto": "2026-11-16"
@@ -22663,8 +23601,8 @@
    "visto": "2026-11-15"
   },
   "oferta:80632928": {
-   "precio": 2235.0,
-   "visto": "2026-11-15"
+   "precio": 1895.0,
+   "visto": "2026-11-16"
   },
   "oferta:80633254": {
    "precio": 375.0,
@@ -23276,11 +24214,11 @@
    "visto": "2026-11-16"
   },
   "oferta:89510611": {
-   "precio": 273480.0,
+   "precio": 272490.0,
    "visto": "2026-11-16"
   },
   "oferta:89510625": {
-   "precio": 154175.0,
+   "precio": 153680.0,
    "visto": "2026-11-16"
   },
   "oferta:89514727": {
@@ -23778,7 +24716,7 @@
    "visto": "2026-11-16"
   },
   "oferta:89600169": {
-   "precio": 800.0,
+   "precio": 524.0,
    "visto": "2026-11-16"
   },
   "oferta:89601545": {
@@ -23826,7 +24764,7 @@
    "visto": "2026-11-16"
   },
   "oferta:89604073": {
-   "precio": 61135.0,
+   "precio": 59860.0,
    "visto": "2026-11-16"
   },
   "oferta:89606656": {
@@ -23934,7 +24872,7 @@
    "visto": "2026-11-16"
   },
   "oferta:89619376": {
-   "precio": 20465.0,
+   "precio": 19820.0,
    "visto": "2026-11-16"
   },
   "oferta:89620544": {
@@ -23950,7 +24888,7 @@
    "visto": "2026-11-16"
   },
   "oferta:89622661": {
-   "precio": 10295.0,
+   "precio": 9965.0,
    "visto": "2026-11-16"
   },
   "oferta:89622939": {
@@ -24053,6 +24991,10 @@
    "precio": 31685.0,
    "visto": "2026-11-16"
   },
+  "oferta:89633706": {
+   "precio": 121517.0,
+   "visto": "2026-11-16"
+  },
   "oferta:89634391": {
    "precio": 27985.0,
    "visto": "2026-11-16"
@@ -24060,6 +25002,10 @@
   "oferta:89634616": {
    "precio": 1250.0,
    "visto": "2026-11-15"
+  },
+  "oferta:89635338": {
+   "precio": 126851.0,
+   "visto": "2026-11-16"
   },
   "oferta:89638676": {
    "precio": 2270.0,
@@ -24075,6 +25021,10 @@
   },
   "oferta:89656444": {
    "precio": 101628.0,
+   "visto": "2026-11-16"
+  },
+  "oferta:90043076": {
+   "precio": 1295.0,
    "visto": "2026-11-16"
   },
   "oferta:90099049": {
@@ -24135,8 +25085,8 @@
    "visto": "2026-11-15"
   },
   "oferta:90348063": {
-   "precio": 1275.0,
-   "visto": "2026-11-15"
+   "precio": 995.0,
+   "visto": "2026-11-16"
   },
   "oferta:90373590": {
    "precio": 1095.0,
@@ -24355,6 +25305,10 @@
    "precio": 4925.0,
    "visto": "2026-11-16"
   },
+  "oferta:90566697": {
+   "precio": 1795.0,
+   "visto": "2026-11-16"
+  },
   "oferta:90566744": {
    "precio": 3995.0,
    "visto": "2026-11-16"
@@ -24483,6 +25437,10 @@
   },
   "oferta:90581990": {
    "precio": 1515.0,
+   "visto": "2026-11-16"
+  },
+  "oferta:90584210": {
+   "precio": 399.0,
    "visto": "2026-11-16"
   },
   "oferta:90584502": {
@@ -25191,7 +26149,7 @@
    "visto": "2026-11-16"
   },
   "oferta:99490108": {
-   "precio": 105235.0,
+   "precio": 104740.0,
    "visto": "2026-11-16"
   },
   "oferta:99490274": {
@@ -25979,7 +26937,7 @@
    "visto": "2026-11-15"
   },
   "oferta:99619168": {
-   "precio": 57935.0,
+   "precio": 57005.0,
    "visto": "2026-11-16"
   },
   "oferta:99619192": {
@@ -25999,11 +26957,11 @@
    "visto": "2026-11-16"
   },
   "oferta:99619880": {
-   "precio": 115435.0,
+   "precio": 113800.0,
    "visto": "2026-11-16"
   },
   "oferta:99620280": {
-   "precio": 129335.0,
+   "precio": 128510.0,
    "visto": "2026-11-16"
   },
   "oferta:99620299": {
@@ -26074,6 +27032,10 @@
    "precio": 26450.0,
    "visto": "2026-11-16"
   },
+  "oferta:99626630": {
+   "precio": 81051.0,
+   "visto": "2026-11-16"
+  },
   "oferta:99627309": {
    "precio": 15120.0,
    "visto": "2026-11-16"
@@ -26138,6 +27100,10 @@
    "precio": 52355.0,
    "visto": "2026-11-15"
   },
+  "oferta:99633697": {
+   "precio": 127778.0,
+   "visto": "2026-11-16"
+  },
   "oferta:99634418": {
    "precio": 36085.0,
    "visto": "2026-11-15"
@@ -26176,6 +27142,10 @@
   },
   "oferta:99657056": {
    "precio": 7257.0,
+   "visto": "2026-11-16"
+  },
+  "oferta:99657122": {
+   "precio": 30994.0,
    "visto": "2026-11-16"
   },
   "oferta:99657141": {
