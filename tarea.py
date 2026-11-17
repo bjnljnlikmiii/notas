@@ -720,6 +720,11 @@ def telegram(metodo, datos, foto_bytes=None):
             log(f"    Telegram pide esperar {espera} s")
             time.sleep(int(espera) + 1)
             continue
+        if (respuesta.get("error_code") or 0) >= 500 and intento < 4:
+            # Fallo de los servidores de Telegram: suele arreglarse solo en segundos o minutos.
+            log(f"    Telegram falla por su lado ({respuesta.get('error_code')}); reintento")
+            time.sleep(2 ** (intento + 1))
+            continue
         raise ErrorTelegram(respuesta.get("error_code"), respuesta.get("description"))
     raise ErrorTelegram(None, "demasiados reintentos")
 
@@ -870,7 +875,7 @@ def main():
     # token o el número de chat están mal, mejor saberlo en segundos.
     # Si hay varias personas y el número de una está mal, se avisa igual a las demás.
     if TELEGRAM_TOKEN:
-        validos = []
+        validos, telegram_caido = [], False
         for chat in TELEGRAM_CHATS:
             real = canales.get(chat.lower(), chat)
             try:
@@ -879,6 +884,12 @@ def main():
                 continue
             except ErrorTelegram as e:
                 error = e
+                if e.codigo is None or e.codigo >= 500:
+                    telegram_caido = True
+            except (urllib.error.URLError, TimeoutError, ConnectionError) as e:
+                error, telegram_caido = e, True
+            if telegram_caido:
+                continue  # Telegram no responde: no tiene sentido buscar el canal ahora
             if chat.startswith("@"):
                 encontrado = buscar_canal_por_nombre(chat[1:])
                 if encontrado:
@@ -888,6 +899,12 @@ def main():
                     continue
             print(f"::warning::Telegram rechaza el chat {chat}: {error}. Si es una persona, tiene que "
                   "pulsar Iniciar en el bot; si es un canal, el bot tiene que ser administrador.")
+        if not validos and telegram_caido:
+            # No es un problema de configuración: Telegram está caído. No se revisa ni se guarda
+            # nada, así las novedades se avisarán en cuanto Telegram vuelva.
+            print(f"::warning::Telegram no está disponible ahora mismo ({error}). No reviso esta vez "
+                  "para no perder avisos; lo intentaré en la próxima revisión.")
+            return
         if not validos:
             print("::error::Ningún chat de TELEGRAM_CHAT_ID funciona: revisa el secreto.")
             sys.exit(1)
