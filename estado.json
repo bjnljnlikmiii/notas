@@ -1,7 +1,7 @@
 {
  "avisos_hoy": {
   "fecha": "2026-11-18",
-  "n": 4
+  "n": 5
  },
  "resumen_diario": "2026-11-17",
  "canales": {
@@ -3464,7 +3464,7 @@
   },
   "es-bajada:s69611263": {
    "precio": 647.0,
-   "visto": "2026-11-16"
+   "visto": "2026-11-18"
   },
   "es-bajada:s69612088": {
    "precio": 625.0,
@@ -3905,6 +3905,10 @@
   },
   "es-bajada:s99620398": {
    "precio": 111.0,
+   "visto": "2026-11-18"
+  },
+  "es-bajada:s99622967": {
+   "precio": 380.0,
    "visto": "2026-11-18"
   },
   "es-bajada:s99623226": {
@@ -5761,6 +5765,11 @@
   },
   "es-oferta:s19546722": {
    "precio": 89.0,
+   "visto": "2026-11-18",
+   "ultimas": true
+  },
+  "es-oferta:s19561642": {
+   "precio": 869.0,
    "visto": "2026-11-18",
    "ultimas": true
   },
