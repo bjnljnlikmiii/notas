@@ -132,6 +132,8 @@ if not INCLUIR_ESPANA:
 
 def etiqueta(que):
     """Nombre neutro de una sección para los registros (A1, A2… / B1, B2…)."""
+    if isinstance(que, tuple) and que[0] in SECCIONES:
+        return f"A{SECCIONES.index(que[0]) + 1}b"
     if que in SECCIONES:
         return f"A{SECCIONES.index(que) + 1}"
     nombres_b = [e for e, _ in SECCIONES_ES]
@@ -219,13 +221,20 @@ def filtros_de_pagina(html):
     return params, orden
 
 
-def leer_seccion(slug):
+def leer_seccion(slug, orden_pedido=None):
     sesion = nueva_sesion()
     url = f"{BASE}/es/{slug}"
     html = descargar(sesion, url)
     productos = extraer_productos(html)
     vistos, total = mostrando(html)
     params, orden = filtros_de_pagina(html)
+    if orden_pedido and orden_pedido != orden:
+        # La web reparte los productos entre páginas de forma inestable: leyendo también en otro
+        # orden aparecen los que en el orden normal se quedan sin salir.
+        orden = orden_pedido
+        html = descargar(sesion, f"{url}?{urllib.parse.urlencode(params + [('order', orden)])}")
+        productos = extraer_productos(html)
+        vistos, total = mostrando(html)
 
     # Las páginas hay que pedirlas en orden (la web recuerda por cuál vas).
     pagina = 2
@@ -298,7 +307,7 @@ def leer_tarea(tarea):
     pais, que = tarea
     try:
         if pais == "do":
-            return pais, que, leer_seccion(que)
+            return pais, que, (leer_seccion(*que) if isinstance(que, tuple) else leer_seccion(que))
         return pais, que, leer_espana(*que)
     except Exception as e:
         log(f"  {etiqueta(que)}: no se pudo leer ({e})")
@@ -925,6 +934,10 @@ def main():
     destacados_activos = "destacados" in secciones_activadas
 
     tareas = [("do", slug) for slug in SECCIONES] + [("es", sec) for sec in SECCIONES_ES]
+    # Dos veces por hora (revisiones de los minutos :03 y :33), la sección grande de ofertas
+    # también se lee ordenada por precio, para ver los productos que el orden normal se salta.
+    if ahora_rd.minute // 10 % 3 == 0 or os.environ.get("LECTURA_DOBLE") == "1":
+        tareas.append(("do", (SECCIONES[0], "PRICEASC")))
     log("Leyendo tienda A" + (" y tienda B…" if SECCIONES_ES else "…"))
     inicio = time.time()
     # Todas las secciones se leen a la vez para que la revisión tarde menos.
