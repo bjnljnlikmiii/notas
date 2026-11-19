@@ -178,7 +178,7 @@ _DECODER = json.JSONDecoder()
 def extraer_productos(html):
     """Cada producto del listado trae sus datos en un `var item = {...}`."""
     productos = []
-    for m in re.finditer(r"var item = ", html):
+    for m in re.finditer(r"var\s+item\s*=\s*", html):
         try:
             obj, _ = _DECODER.raw_decode(html, m.end())
         except ValueError:
