@@ -1,7 +1,7 @@
 {
  "avisos_hoy": {
   "fecha": "2026-11-19",
-  "n": 90
+  "n": 99
  },
  "resumen_diario": "2026-11-18",
  "canales": {
@@ -6065,11 +6065,11 @@
    "visto": "2026-11-19"
   },
   "es-tienda:s09581513": {
-   "precio": 181.32,
+   "precio": 10.0,
    "visto": "2026-11-19"
   },
   "es-tienda:s19553454": {
-   "precio": 99.18,
+   "precio": 10.0,
    "visto": "2026-11-19"
   },
   "es-tienda:s19574951": {
@@ -6077,11 +6077,11 @@
    "visto": "2026-11-19"
   },
   "es-tienda:s19581536": {
-   "precio": 80.74,
+   "precio": 10.0,
    "visto": "2026-11-19"
   },
   "es-tienda:s19581555": {
-   "precio": 90.24,
+   "precio": 10.0,
    "visto": "2026-11-19"
   },
   "es-tienda:s29393709": {
@@ -6089,7 +6089,7 @@
    "visto": "2026-11-19"
   },
   "es-tienda:s49506593": {
-   "precio": 179.54,
+   "precio": 10.0,
    "visto": "2026-11-19"
   },
   "es-tienda:s49575360": {
@@ -6097,7 +6097,7 @@
    "visto": "2026-11-19"
   },
   "es-tienda:s49581511": {
-   "precio": 125.97,
+   "precio": 10.0,
    "visto": "2026-11-19"
   },
   "es-tienda:s69898415": {
@@ -6105,11 +6105,11 @@
    "visto": "2026-11-19"
   },
   "es-tienda:s79581519": {
-   "precio": 94.99,
+   "precio": 10.0,
    "visto": "2026-11-19"
   },
   "es-tienda:s79581543": {
-   "precio": 75.19,
+   "precio": 10.0,
    "visto": "2026-11-19"
   },
   "es-tienda:s79597515": {
@@ -6117,7 +6117,7 @@
    "visto": "2026-11-19"
   },
   "es-tienda:s89581509": {
-   "precio": 60.44,
+   "precio": 10.0,
    "visto": "2026-11-19"
   },
   "es-tienda:s99576183": {
