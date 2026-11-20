@@ -1,7 +1,7 @@
 {
  "avisos_hoy": {
   "fecha": "2026-11-19",
-  "n": 99
+  "n": 101
  },
  "resumen_diario": "2026-11-18",
  "canales": {
@@ -3002,6 +3002,10 @@
    "precio": 86.94,
    "visto": "2026-11-19"
   },
+  "es-bajada:s29544303": {
+   "precio": 389.0,
+   "visto": "2026-11-19"
+  },
   "es-bajada:s29552171": {
    "precio": 239.97,
    "visto": "2026-11-19"
@@ -3248,6 +3252,10 @@
   },
   "es-bajada:s49568487": {
    "precio": 498.0,
+   "visto": "2026-11-19"
+  },
+  "es-bajada:s49569335": {
+   "precio": 250.0,
    "visto": "2026-11-19"
   },
   "es-bajada:s49572578": {
@@ -4598,6 +4606,11 @@
    "visto": "2026-11-19",
    "ultimas": true
   },
+  "es-oferta:20492596": {
+   "precio": 72.99,
+   "visto": "2026-11-19",
+   "ultimas": true
+  },
   "es-oferta:20504194": {
    "precio": 1.99,
    "visto": "2026-11-19",
@@ -5760,6 +5773,11 @@
    "visto": "2026-11-19",
    "ultimas": true
   },
+  "es-oferta:90610186": {
+   "precio": 2.99,
+   "visto": "2026-11-19",
+   "ultimas": true
+  },
   "es-oferta:90610191": {
    "precio": 1.29,
    "visto": "2026-11-19",
@@ -5995,6 +6013,10 @@
    "precio": 459.0,
    "visto": "2026-11-19",
    "ultimas": true
+  },
+  "es-tienda:00555090": {
+   "precio": 149.0,
+   "visto": "2026-11-19"
   },
   "es-tienda:00600610": {
    "precio": 29.99,
