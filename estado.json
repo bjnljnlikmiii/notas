@@ -1,11 +1,15 @@
 {
  "avisos_hoy": {
   "fecha": "2026-11-24",
-  "n": 1,
-  "mensajes": 2,
+  "n": 4,
+  "mensajes": 6,
   "productos": [
-   "🇩🇴 VETEJORDFLY -50%"
-  ]
+   "🇩🇴 VETEJORDFLY -50%",
+   "🇩🇴 IDANÄS -38%",
+   "🇩🇴 IDANÄS -30%",
+   "🇩🇴 IDANÄS -24%"
+  ],
+  "primer_enlace": "https://t.me/c/3837947699/463"
  },
  "resumen_diario": "2026-11-23",
  "canales": {
@@ -10448,7 +10452,7 @@
    "visto": "2026-11-24"
   },
   "oferta:19390075": {
-   "precio": 51495.0,
+   "precio": 43895.0,
    "visto": "2026-11-24"
   },
   "oferta:19392164": {
@@ -10990,7 +10994,7 @@
    "visto": "2026-11-22"
   },
   "oferta:19567286": {
-   "precio": 70490.0,
+   "precio": 62890.0,
    "visto": "2026-11-24"
   },
   "oferta:19567917": {
@@ -20660,8 +20664,8 @@
    "visto": "2026-11-24"
   },
   "oferta:60458958": {
-   "precio": 46745.0,
-   "visto": "2026-11-22"
+   "precio": 41795.0,
+   "visto": "2026-11-24"
   },
   "oferta:60462007": {
    "precio": 1245.0,
