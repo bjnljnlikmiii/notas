@@ -695,6 +695,19 @@ def multipart(campos, foto_bytes):
     return b"".join(partes), f"multipart/form-data; boundary={limite}"
 
 
+ENVIADOS = []   # (chat, número de mensaje) de cada mensaje enviado en esta revisión
+
+
+def enlace(chat, mensaje_id):
+    """Enlace directo a un mensaje (sirve a quien está en el canal)."""
+    chat = str(chat)
+    if chat.startswith("-100"):
+        return f"https://t.me/c/{chat[4:]}/{mensaje_id}"
+    if chat.startswith("@"):
+        return f"https://t.me/{chat[1:]}/{mensaje_id}"
+    return ""
+
+
 def telegram(metodo, datos, foto_bytes=None):
     url = f"https://api.telegram.org/bot{TELEGRAM_TOKEN}/{metodo}"
     for intento in range(5):
@@ -723,7 +736,10 @@ def telegram(metodo, datos, foto_bytes=None):
         if respuesta.get("ok"):
             # Telegram permite ~1 mensaje por segundo a un chat (20/min a un grupo o canal).
             time.sleep(3.1 if str(datos.get("chat_id", "")).startswith(("-", "@")) else 1.1)
-            return respuesta.get("result")
+            resultado = respuesta.get("result")
+            if metodo in ("sendMessage", "sendPhoto") and isinstance(resultado, dict):
+                ENVIADOS.append((datos.get("chat_id"), resultado.get("message_id")))
+            return resultado
         espera = (respuesta.get("parameters") or {}).get("retry_after")
         if respuesta.get("error_code") == 429 and espera:
             log(f"    Telegram pide esperar {espera} s")
@@ -797,12 +813,15 @@ def notificar(encabezado, ofertas, chats=None, fotos=None, max_listas=MAX_MENSAJ
         return
 
     for chat in chats:
+        desde = len(ENVIADOS)
         for tipo, cosa in partes:
             if tipo == "producto":
                 enviar_producto(chat, cosa)
             else:
                 enviar_texto(chat, cosa)
-        log(f"    Telegram: {len(partes)} mensajes enviados al chat {chat}")
+        primero = ENVIADOS[desde][1] if len(ENVIADOS) > desde else None
+        log(f"    Telegram: {len(partes)} mensajes enviados al chat {chat}"
+            + (f" (el primero: {enlace(chat, primero)})" if primero else ""))
 
 
 # --------------------------------------------------------------------------
@@ -1074,6 +1093,20 @@ def main():
             secciones_activadas.add("destacados_lista")  # la activación ya incluye el resumen
         secciones_activadas.add("destacados")
 
+    # Prueba de entrega, una vez: confirma en qué canal publica el bot.
+    if "prueba_entrega" not in secciones_activadas and TELEGRAM_TOKEN and TELEGRAM_CHATS:
+        for chat in TELEGRAM_CHATS:
+            try:
+                info = telegram("getChat", {"chat_id": chat}) or {}
+                miembros = telegram("getChatMemberCount", {"chat_id": chat})
+            except ErrorTelegram as e:
+                info, miembros = {}, f"? ({e})"
+            nombre = info.get("title") or info.get("first_name") or str(chat)
+            enviar_texto(chat, f"🔎 <b>Prueba de entrega</b> ({fecha})\nEste mensaje lo publica el bot en "
+                               f"«{esc(nombre)}» ({miembros} miembros). Si lo estás viendo, los avisos te llegan bien.")
+            log(f"Prueba de entrega: «{nombre}», {miembros} miembros, mensaje {enlace(*ENVIADOS[-1])}")
+        secciones_activadas.add("prueba_entrega")
+
     # Mensaje de comprobación, una sola vez (para confirmar que llegan los avisos desde aquí).
     if "comprobacion_envio" not in secciones_activadas and TELEGRAM_TOKEN and TELEGRAM_CHATS:
         n_a = sum(1 for o in actuales.values() if o["pais"] == "do")
@@ -1101,6 +1134,7 @@ def main():
                       mejores[:min(MAX_FOTOS, 5)], chats=[chat])
     saludados |= {huella(c) for c in TELEGRAM_CHATS}
 
+    inicio_avisos = len(ENVIADOS)   # desde aquí, los mensajes son avisos de ofertas
     if avisar:
         n = len(avisar)
         por_pais = " · ".join(f"{TIENDA[p].split()[0]} {sum(1 for o in avisar if o['pais'] == p)}"
@@ -1122,7 +1156,13 @@ def main():
     avisos_hoy = dict((estado or {}).get("avisos_hoy") or {})
     if avisos_hoy.get("fecha") != hoy:
         avisos_hoy = {"fecha": hoy, "n": 0}
-    avisos_hoy["n"] += len(avisar) + (len(camas) if CAMA_Y_COLCHON else 0)
+    avisados = list(avisar) + (list(camas) if CAMA_Y_COLCHON else [])
+    avisos_hoy["n"] += len(avisados)
+    avisos_hoy["mensajes"] = avisos_hoy.get("mensajes", 0) + len(ENVIADOS) - inicio_avisos
+    avisos_hoy["productos"] = (avisos_hoy.get("productos", [])
+                               + [f"{TIENDA[o['pais']].split()[0]} {o['nombre']} -{o['descuento']}%" for o in avisados])[:60]
+    if len(ENVIADOS) > inicio_avisos and not avisos_hoy.get("primer_enlace"):
+        avisos_hoy["primer_enlace"] = enlace(*ENVIADOS[inicio_avisos])
 
     # Resumen del día, una vez cada noche.
     resumen_enviado = (estado or {}).get("resumen_diario", "")
@@ -1141,7 +1181,15 @@ def main():
         else:
             lineas.append("Sigo funcionando.")
         n = avisos_hoy["n"]
-        lineas.append(f"Avisos enviados hoy: {n}" + ("" if n else " (no hubo rebajas nuevas que cumplan tus reglas)"))
+        if n:
+            lineas.append(f"Avisos de hoy: {n} {'producto' if n == 1 else 'productos'}"
+                          + (f" en {avisos_hoy['mensajes']} mensajes" if avisos_hoy.get("mensajes") else "") + ":")
+            nombres = avisos_hoy.get("productos", [])
+            lineas.append(esc(" · ".join(nombres[:15])) + (f" · y {len(nombres) - 15} más" if len(nombres) > 15 else ""))
+            if avisos_hoy.get("primer_enlace"):
+                lineas.append(f'<a href="{esc(avisos_hoy["primer_enlace"])}">Ver el primer aviso de hoy</a>')
+        else:
+            lineas.append("Avisos de hoy: ninguno (no hubo rebajas nuevas que cumplan tus reglas)")
         lineas.append(f"Ahora vigilo: {TIENDA['do']} {n_a:,} ofertas · {TIENDA['es']} {n_b:,} ofertas")
         if CAMA_Y_COLCHON:
             n_camas = sum(1 for o in actuales.values() if para_mi_cama(o))
