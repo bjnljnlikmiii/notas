@@ -1,7 +1,9 @@
 {
  "avisos_hoy": {
   "fecha": "2026-11-24",
-  "n": 1
+  "n": 1,
+  "mensajes": 0,
+  "productos": []
  },
  "resumen_diario": "2026-11-23",
  "canales": {
@@ -16,6 +18,7 @@
   "comprobacion_envio",
   "destacados",
   "destacados_lista",
+  "prueba_entrega",
   "resumen_inicial"
  ],
  "productos": {
