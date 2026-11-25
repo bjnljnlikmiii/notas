@@ -1,8 +1,8 @@
 {
  "avisos_hoy": {
   "fecha": "2026-11-25",
-  "n": 50,
-  "mensajes": 24,
+  "n": 51,
+  "mensajes": 26,
   "productos": [
    "🇪🇸 SKANSNÄS / GRÖNSTA -6%",
    "🇩🇴 MALM/STORKLINTA -23%",
@@ -53,7 +53,8 @@
    "🇩🇴 FEJKA -69%",
    "🇩🇴 VINTERFINT -69%",
    "🇩🇴 VINTERFINT -69%",
-   "🇩🇴 BERGGRAN -61%"
+   "🇩🇴 BERGGRAN -61%",
+   "🇩🇴 VÄRDERA -50%"
   ],
   "primer_enlace": "https://t.me/c/3837947699/472"
  },
@@ -22839,6 +22840,10 @@
   },
   "oferta:70257638": {
    "precio": 1995.0,
+   "visto": "2026-11-25"
+  },
+  "oferta:70277354": {
+   "precio": 2295.0,
    "visto": "2026-11-25"
   },
   "oferta:70277981": {
