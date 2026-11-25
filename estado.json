@@ -1,10 +1,12 @@
 {
  "avisos_hoy": {
   "fecha": "2026-11-25",
-  "n": 1,
-  "mensajes": 2,
+  "n": 3,
+  "mensajes": 5,
   "productos": [
-   "🇪🇸 SKANSNÄS / GRÖNSTA -6%"
+   "🇪🇸 SKANSNÄS / GRÖNSTA -6%",
+   "🇩🇴 MALM/STORKLINTA -23%",
+   "🇩🇴 MALM/STORKLINTA -13%"
   ],
   "primer_enlace": "https://t.me/c/3837947699/472"
  },
@@ -11115,6 +11117,10 @@
    "precio": 52980.0,
    "visto": "2026-11-25"
   },
+  "oferta:19577676": {
+   "precio": 54980.0,
+   "visto": "2026-11-25"
+  },
   "oferta:19577695": {
    "precio": 35595.0,
    "visto": "2026-11-22"
@@ -17638,6 +17644,10 @@
   },
   "oferta:49573460": {
    "precio": 37890.0,
+   "visto": "2026-11-25"
+  },
+  "oferta:49574365": {
+   "precio": 19995.0,
    "visto": "2026-11-25"
   },
   "oferta:49575181": {
@@ -26603,6 +26613,10 @@
   },
   "oferta:89577668": {
    "precio": 57880.0,
+   "visto": "2026-11-25"
+  },
+  "oferta:89577673": {
+   "precio": 26490.0,
    "visto": "2026-11-25"
   },
   "oferta:89577710": {
