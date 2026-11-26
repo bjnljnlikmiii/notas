@@ -1,8 +1,8 @@
 {
  "avisos_hoy": {
   "fecha": "2026-11-26",
-  "n": 8,
-  "mensajes": 13,
+  "n": 10,
+  "mensajes": 16,
   "productos": [
    "🇪🇸 KLASSRUM -14%",
    "🇪🇸 TONSTAD / GRÖNSTA -12%",
@@ -10,6 +10,8 @@
    "🇩🇴 SONGESAND -14%",
    "🇩🇴 SONGESAND -8%",
    "🇩🇴 LILLHAVET -71%",
+   "🇩🇴 IDANÄS -38%",
+   "🇩🇴 IDANÄS -36%",
    "🇩🇴 IDANÄS -38%",
    "🇩🇴 IDANÄS -36%"
   ],
@@ -9783,7 +9785,7 @@
    "visto": "2026-11-26"
   },
   "oferta:19389581": {
-   "precio": 29495.0,
+   "precio": 24995.0,
    "visto": "2026-11-26"
   },
   "oferta:19390075": {
@@ -19985,7 +19987,7 @@
    "visto": "2026-11-24"
   },
   "oferta:79567274": {
-   "precio": 42490.0,
+   "precio": 37990.0,
    "visto": "2026-11-26"
   },
   "oferta:79567943": {
