@@ -1,12 +1,14 @@
 {
  "avisos_hoy": {
   "fecha": "2026-11-26",
-  "n": 3,
-  "mensajes": 5,
+  "n": 5,
+  "mensajes": 8,
   "productos": [
    "🇪🇸 KLASSRUM -14%",
    "🇪🇸 TONSTAD / GRÖNSTA -12%",
-   "🇩🇴 OMBONAD -50%"
+   "🇩🇴 OMBONAD -50%",
+   "🇩🇴 SONGESAND -14%",
+   "🇩🇴 SONGESAND -8%"
   ],
   "primer_enlace": "https://t.me/c/3837947699/499"
  },
@@ -11259,6 +11261,10 @@
    "precio": 950.0,
    "visto": "2026-11-26"
   },
+  "oferta:29241141": {
+   "precio": 30195.0,
+   "visto": "2026-11-26"
+  },
   "oferta:29249514": {
    "precio": 3840.0,
    "visto": "2026-11-26"
@@ -12107,6 +12113,10 @@
   },
   "oferta:30064849": {
    "precio": 555.0,
+   "visto": "2026-11-26"
+  },
+  "oferta:30152638": {
+   "precio": 1255.0,
    "visto": "2026-11-26"
   },
   "oferta:30199283": {
@@ -21069,6 +21079,10 @@
   },
   "oferta:89222502": {
    "precio": 11775.0,
+   "visto": "2026-11-26"
+  },
+  "oferta:89241195": {
+   "precio": 34395.0,
    "visto": "2026-11-26"
   },
   "oferta:89249375": {
