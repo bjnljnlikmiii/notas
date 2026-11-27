@@ -1,8 +1,8 @@
 {
  "avisos_hoy": {
   "fecha": "2026-11-27",
-  "n": 22,
-  "mensajes": 26,
+  "n": 23,
+  "mensajes": 28,
   "productos": [
    "🇩🇴 BERGSHULT/GRANHULT -47%",
    "🇩🇴 SOLFÅGEL -46%",
@@ -25,7 +25,8 @@
    "🇩🇴 GULLABERG -30%",
    "🇩🇴 GULLABERG -30%",
    "🇩🇴 GULLABERG -26%",
-   "🇩🇴 GULLABERG -26%"
+   "🇩🇴 GULLABERG -26%",
+   "🇩🇴 MIDDAGSMAT -0%"
   ],
   "primer_enlace": "https://t.me/c/3837947699/538"
  },
@@ -592,6 +593,10 @@
   },
   "bajada:20616988": {
    "precio": 8295.0,
+   "visto": "2026-11-27"
+  },
+  "bajada:29303940": {
+   "precio": 27995.0,
    "visto": "2026-11-27"
   },
   "bajada:29489085": {
@@ -2100,6 +2105,11 @@
   },
   "destacado:00562104": {
    "precio": 1195.0,
+   "visto": "2026-11-27",
+   "destacado": "2026-11-27"
+  },
+  "destacado:30576519": {
+   "precio": 1090.0,
    "visto": "2026-11-27",
    "destacado": "2026-11-27"
   },
@@ -22206,7 +22216,7 @@
    "visto": "2026-11-26"
   },
   "oferta:89575160": {
-   "precio": 3975.0,
+   "precio": 4275.0,
    "visto": "2026-11-27"
   },
   "oferta:89575198": {
@@ -23641,7 +23651,7 @@
    "visto": "2026-11-27"
   },
   "oferta:99544738": {
-   "precio": 20295.0,
+   "precio": 23175.0,
    "visto": "2026-11-27",
    "ultimas": true
   },
