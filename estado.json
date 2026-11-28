@@ -1,8 +1,8 @@
 {
  "avisos_hoy": {
   "fecha": "2026-11-28",
-  "n": 56,
-  "mensajes": 15,
+  "n": 57,
+  "mensajes": 17,
   "productos": [
    "🇩🇴 SUNDSÖ -33%",
    "🇩🇴 MÖRBYLÅNGA/ODGER -40%",
@@ -59,7 +59,8 @@
    "🇩🇴 SEKTION/MAXIMERA -46%",
    "🇩🇴 SEKTION -45%",
    "🇩🇴 SEKTION -45%",
-   "🇩🇴 SEKTION/MAXIMERA -45%"
+   "🇩🇴 SEKTION/MAXIMERA -45%",
+   "🇩🇴 STOCKHOLM 2025 -52%"
   ],
   "primer_enlace": "https://t.me/c/3837947699/665"
  },
@@ -15488,7 +15489,7 @@
   },
   "oferta:39602806": {
    "precio": 31245.0,
-   "visto": "2026-11-27"
+   "visto": "2026-11-28"
   },
   "oferta:39602811": {
    "precio": 32445.0,
@@ -18476,7 +18477,7 @@
    "visto": "2026-11-28"
   },
   "oferta:50586635": {
-   "precio": 40195.0,
+   "precio": 33995.0,
    "visto": "2026-11-28"
   },
   "oferta:50587442": {
