@@ -1,8 +1,8 @@
 {
  "avisos_hoy": {
   "fecha": "2026-11-28",
-  "n": 72,
-  "mensajes": 33,
+  "n": 73,
+  "mensajes": 35,
   "productos": [
    "🇩🇴 SUNDSÖ -33%",
    "🇩🇴 MÖRBYLÅNGA/ODGER -40%",
@@ -11369,7 +11369,7 @@
   },
   "oferta:19602044": {
    "precio": 7435.0,
-   "visto": "2026-11-27",
+   "visto": "2026-11-28",
    "ultimas": true
   },
   "oferta:19602812": {
@@ -17613,7 +17613,7 @@
   },
   "oferta:49589965": {
    "precio": 24400.0,
-   "visto": "2026-11-27"
+   "visto": "2026-11-28"
   },
   "oferta:49590092": {
    "precio": 29780.0,
@@ -21904,12 +21904,12 @@
   },
   "oferta:69602032": {
    "precio": 1145.0,
-   "visto": "2026-11-27",
+   "visto": "2026-11-28",
    "ultimas": true
   },
   "oferta:69602126": {
    "precio": 2740.0,
-   "visto": "2026-11-27",
+   "visto": "2026-11-28",
    "ultimas": true
   },
   "oferta:69602602": {
@@ -24956,6 +24956,11 @@
    "precio": 3895.0,
    "visto": "2026-11-28",
    "destacado": "2026-11-28"
+  },
+  "oferta:80579327": {
+   "precio": 14995.0,
+   "visto": "2026-11-28",
+   "ultimas": true
   },
   "oferta:80581467": {
    "precio": 159.0,
@@ -28235,7 +28240,7 @@
   },
   "oferta:99589963": {
    "precio": 19930.0,
-   "visto": "2026-11-27"
+   "visto": "2026-11-28"
   },
   "oferta:99590099": {
    "precio": 32980.0,
