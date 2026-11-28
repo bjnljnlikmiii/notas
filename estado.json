@@ -1,10 +1,14 @@
 {
  "avisos_hoy": {
   "fecha": "2026-11-28",
-  "n": 1,
-  "mensajes": 2,
+  "n": 5,
+  "mensajes": 7,
   "productos": [
-   "🇩🇴 SUNDSÖ -33%"
+   "🇩🇴 SUNDSÖ -33%",
+   "🇩🇴 MÖRBYLÅNGA/ODGER -40%",
+   "🇩🇴 MÖRBYLÅNGA/TEGELÖN -24%",
+   "🇩🇴 EKHOLMA -9%",
+   "🇩🇴 EKHOLMA -8%"
   ],
   "primer_enlace": "https://t.me/c/3837947699/665"
  },
@@ -10428,7 +10432,8 @@
   },
   "oferta:19305044": {
    "precio": 62375.0,
-   "visto": "2026-11-28"
+   "visto": "2026-11-28",
+   "ultimas": true
   },
   "oferta:19316603": {
    "precio": 17095.0,
@@ -12964,7 +12969,8 @@
   },
   "oferta:29537411": {
    "precio": 40895.0,
-   "visto": "2026-11-28"
+   "visto": "2026-11-28",
+   "ultimas": true
   },
   "oferta:29539410": {
    "precio": 10490.0,
@@ -19123,7 +19129,8 @@
   },
   "oferta:59477420": {
    "precio": 108775.0,
-   "visto": "2026-11-28"
+   "visto": "2026-11-28",
+   "ultimas": true
   },
   "oferta:59477482": {
    "precio": 6270.0,
@@ -21317,7 +21324,8 @@
   },
   "oferta:69537414": {
    "precio": 40495.0,
-   "visto": "2026-11-28"
+   "visto": "2026-11-28",
+   "ultimas": true
   },
   "oferta:69541939": {
    "precio": 20635.0,
