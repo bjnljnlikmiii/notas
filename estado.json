@@ -1,8 +1,8 @@
 {
  "avisos_hoy": {
   "fecha": "2026-11-27",
-  "n": 145,
-  "mensajes": 111,
+  "n": 147,
+  "mensajes": 115,
   "productos": [
    "🇩🇴 BERGSHULT/GRANHULT -47%",
    "🇩🇴 SOLFÅGEL -46%",
@@ -67,7 +67,7 @@
   ],
   "primer_enlace": "https://t.me/c/3837947699/538"
  },
- "resumen_diario": "2026-11-26",
+ "resumen_diario": "2026-11-27",
  "canales": {
   "@oferwoejnju": "-1003837947699"
  },
@@ -12621,6 +12621,10 @@
    "precio": 55970.0,
    "visto": "2026-11-27"
   },
+  "oferta:29390065": {
+   "precio": 34795.0,
+   "visto": "2026-11-27"
+  },
   "oferta:29390107": {
    "precio": 13260.0,
    "visto": "2026-11-27"
@@ -25114,6 +25118,10 @@
   "oferta:80620379": {
    "precio": 26495.0,
    "visto": "2026-11-25"
+  },
+  "oferta:80620628": {
+   "precio": 495.0,
+   "visto": "2026-11-27"
   },
   "oferta:80622123": {
    "precio": 4480.0,
